@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'registration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
@@ -119,13 +119,13 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATICFILES_DIR = os.path.join(BASE_DIR , 'static')
 
-STATIC_ROOT = os.path.join(BASE_DIR , 'staticfiles_build', 'static')
+STATIC_ROOT  = os.path.join(BASE_DIR ,'staticfiles_build', 'static')
+
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 MEDIA_ROOT = os.path.join(BASE_DIR , 'public/static')
-MEDIA_URL = '/media/'
+MEDIA_URLS = '/media/'
